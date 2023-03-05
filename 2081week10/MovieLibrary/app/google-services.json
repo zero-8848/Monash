@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "691617718908",
+    "project_id": "movie-library-15c13",
+    "storage_bucket": "movie-library-15c13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691617718908:android:d40b4024d10c29176a1ff9",
+        "android_client_info": {
+          "package_name": "com.example.movielibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691617718908-eg32fbqlearn0rf6h2cu7e16hm0fkq61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU_N2Cd-WJcfAGfx0n9Z-gs3Tgl2ECGvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691617718908-eg32fbqlearn0rf6h2cu7e16hm0fkq61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
