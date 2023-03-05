@@ -1,0 +1,14 @@
+                    # # if num_of_cities>=travel_days:
+                    #     #evaluate the num of days takes to travel
+                    # if (revenue[i][j]*(travel_days[j][k]))>=revenue[i][k]:#if earning in local city make more money than traveling
+                        
+                    #     continue
+                    # else:#if traveling makes more money
+
+                    #     continue
+ [8,8,11,5]
+
+                #which nest should this code be in?
+                #is number still a 
+                # else:#no move
+                #no traveling
