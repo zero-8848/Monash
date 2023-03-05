@@ -1,0 +1,104 @@
+SQL> --Comment out SET ECHO and SPOOL commands before submitting your portfolio
+SQL> --SET ECHO ON
+SQL> --SPOOL sql_portfolio2_basic_output.txt
+SQL> 
+SQL> --****PLEASE ENTER YOUR DETAILS BELOW****
+SQL> --sql_portfolio2_basic.sql
+SQL> 
+SQL> --Student ID:32350686
+SQL> --Student Name:Zirui Liu
+SQL> --Unit Code:FIT2094
+SQL> --Applied Class No:01
+SQL> 
+SQL> /*1*/
+SQL> -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
+SQL> -- ENSURE that your query is formatted and has a semicolon
+SQL> -- (;) at the end of this answer
+SQL> SELECT
+  2      pay_no,
+  3      to_char(pay_date, 'DD-MON-YYYY') AS payment_date,
+  4      pay_type,
+  5      paymethod_name,
+  6      tenant_givname,
+  7      tenant_famname
+  8  FROM
+  9      (
+ 10          (
+ 11                   rent.payment
+ 12              NATURAL JOIN rent.paymethod
+ 13          )
+ 14          NATURAL JOIN rent.rent
+ 15          NATURAL JOIN rent.tenant
+ 16      )
+ 17  WHERE
+ 18      upper(tenant_famname) LIKE '%D%'
+ 19      AND ( pay_date BETWEEN TO_DATE('01/Jan/2021', 'dd/Mon/yyyy') AND TO_DATE('30/Jun/2021'
+ 20      , 'dd/Mon/yyyy') )
+ 21  ORDER BY
+ 22      pay_type,
+ 23      pay_date;
+
+    PAY_NO PAYMENT_DATE         P PAYMETHOD_NAME  TENANT_GIVNAME       TENANT_FAMNAME      
+---------- -------------------- - --------------- -------------------- --------------------
+        77 04-JAN-2021          B PAYPAL          Nadia                Jerred              
+        80 11-JAN-2021          B BANK CHEQUE     Haily                Cuardall            
+        83 17-JAN-2021          B DIRECT DEPOSIT  Diane                De Bruyne           
+        78 04-JAN-2021          R PAYPAL          Nadia                Jerred              
+        81 11-JAN-2021          R CREDIT CARD     Haily                Cuardall            
+        84 17-JAN-2021          R DIRECT DEPOSIT  Diane                De Bruyne           
+        86 04-FEB-2021          R PAYPAL          Nadia                Jerred              
+        88 11-FEB-2021          R CREDIT CARD     Haily                Cuardall            
+        89 17-FEB-2021          R DIRECT DEPOSIT  Diane                De Bruyne           
+        92 04-MAR-2021          R PAYPAL          Nadia                Jerred              
+        94 11-MAR-2021          R CREDIT CARD     Haily                Cuardall            
+
+    PAY_NO PAYMENT_DATE         P PAYMETHOD_NAME  TENANT_GIVNAME       TENANT_FAMNAME      
+---------- -------------------- - --------------- -------------------- --------------------
+        95 17-MAR-2021          R DIRECT DEPOSIT  Diane                De Bruyne           
+        99 04-APR-2021          R PAYPAL          Nadia                Jerred              
+       101 11-APR-2021          R CREDIT CARD     Haily                Cuardall            
+       102 17-APR-2021          R DIRECT DEPOSIT  Diane                De Bruyne           
+       105 04-MAY-2021          R PAYPAL          Nadia                Jerred              
+       107 11-MAY-2021          R CREDIT CARD     Haily                Cuardall            
+       108 17-MAY-2021          R DIRECT DEPOSIT  Diane                De Bruyne           
+       111 04-JUN-2021          R PAYPAL          Nadia                Jerred              
+       113 11-JUN-2021          R CREDIT CARD     Haily                Cuardall            
+       114 17-JUN-2021          R DIRECT DEPOSIT  Diane                De Bruyne           
+
+21 rows selected. 
+
+SQL> 
+SQL> /*2*/
+SQL> -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
+SQL> -- ENSURE that your query is formatted and has a semicolon
+SQL> -- (;) at the end of this answer
+SQL> SELECT
+  2      maint_id,
+  3      maint_datetime,
+  4      '$' || maint_cost AS maintainence_cost,
+  5      p.prop_no,
+  6      prop_address,
+  7      o.owner_no,
+  8      owner_givname
+  9      || ' '
+ 10      || owner_famname  AS fullname
+ 11  FROM
+ 12           rent.owner o
+ 13      INNER JOIN rent.property    p
+ 14      ON ( o.owner_no = p.owner_no )
+ 15      INNER JOIN rent.maintenance m
+ 16      ON ( m.prop_no = p.prop_no )
+ 17  WHERE
+ 18      to_char(maint_datetime, 'yyyy') = '2020'
+ 19  ORDER BY
+ 20      maint_cost DESC,
+ 21      prop_no;
+
+  MAINT_ID MAINT_DAT MAINTAINENCE_COST                            PROP_NO PROP_ADDRESS                                                                       OWNER_NO FULLNAME                                 
+---------- --------- ----------------------------------------- ---------- -------------------------------------------------------------------------------- ---------- -----------------------------------------
+         3 01-MAY-20 $3500                                           1965 4633 Leannon Crescent, Suite 962, 1791, Lake Evaside, Tasmania                         9321 Lilian Potter                            
+         2 04-JAN-20 $600                                            5990 9454 Ebert Crest, Suite 183, 4027, Trompview, New South Wales                          9762 Jasun Clitsome                           
+
+SQL> --Comment out SET ECHO and SPOOL commands before submitting your portfolio
+SQL> --SPOOL OFF
+SQL> --SET ECHO OFF
