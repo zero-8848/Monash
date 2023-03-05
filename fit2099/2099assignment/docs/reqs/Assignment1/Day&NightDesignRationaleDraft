@@ -1,0 +1,6 @@
+---Day & Night Design Rationale---
+
+New Classes To Be Added:
+    - None
+
+No extra classes should be added as they are not needed. Instead of adding a class all I need to do is create an association between the 'World' class and the 'TimePerceptionManager' so that the world is aware of what time of the day it is in order to apply the correct changes. 

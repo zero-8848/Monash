@@ -1,0 +1,64 @@
+------------------------------DAY AND NIGHT-------------------------------
+--Rough Notes--
+Connect with the world 
+Things that are affected by time:
+    - Ground
+        - Lava
+        - Puddle
+        -Trees
+    - Pokemons
+        - Torchic
+        - Mudkip
+        - Treecko
+
+Probably needs two new classes one called Day and the other called Night
+Link it with appplication class in game-pokemon.png
+Most likely only need to link it with the game(game-pokemon.png) not the engine
+--Rough Notes--
+
+--DESIGN RATIONALE--
+Need to connect the TimePerceptionManager to the ground and the pokemons as they are the ones that are affected by the time of day. 
+--DESIGN RATIONALE--
+------------------------------DAY AND NIGHT-------------------------------
+
+
+------------------------------------NPCs----------------------------------
+--Rough Notes--
+Two NPCs therefore will need two classes
+Will also build an nonPlayableCharacter abstract class
+
+First class = shopKeeper
+    - Needs to be connected to the candy class 
+    - Needs to be connected to the Pokeball class (Need to have one pokeball abstract class if not there)
+
+Second class =  proffesorOak 
+    - Needs to be aware of Pokemons
+
+Link it with appplication class in game-pokemon.png 
+Also needs to be linked with the location class in engine-2022.png as the NPCs have a location
+--Rough Notes--
+
+--DESIGN RATIONALE--
+For the NPCs, I've chosen to first create an abstract class called nonPlayableCharacter which will serve the purpose of creating functionnality that both the NPCs will have, and will also act as the blueprint for the sub classes. Therefore there will be an inheritance arrow that connects nonPlayableCharacter to actor and one inheritance arrow that will stem from proffesorOak and shopKeeper to the nonPlayableCharacter class to illustrate the inheritance. To represent the pokeballs I will create an abstract class called Pokeball which will extend item. 
+
+
+--DESIGN RATIONALE--
+------------------------------------NPCs----------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

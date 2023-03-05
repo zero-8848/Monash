@@ -1,0 +1,11 @@
+---NPCs Design Rationale---
+
+New Classes To Be Added:
+    - NonPlayableCharacter <<abstract>>
+    - ProffesorOak
+    - ShopKeeper
+    - Pokeball 
+    - PokeballType <<enum>>
+    - Pokedex
+
+For the NPC requirement I decided to add a multitude of new classes. I added an abstract class 'NonPlayableCharacter' which extends the actor class. I choose to this as it will outline the functionanlity that these NPCs will have and also acts as the blueprint for the two sub classes that are 'ProffesorOak' and 'ShopKeeper'. The only downside of adding another abstract child class below the parent class 'Actor' is that I will have to write a more code, on the contrary it provides a concrete class outline and provides more precise objects. Other classes that I decided to add such as the 'Pokeball' which extendst the 'Item' class for more precise objects. I also added a PokeballType <<enum>> which will be used to deferentiate between the pokeballs for example a greatball vs a masterball. Even though creating a pokedex object is not neccessary I decided to add one as it may be used in future assignments where we will have to implement its functionality and it only requires a few simple lines of code.
