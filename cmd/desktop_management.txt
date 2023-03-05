@@ -1,0 +1,51 @@
+ 驱动器 C 中的卷是 Windows
+ 卷的序列号是 8003-DA41
+
+ C:\Users\zirui 的目录
+
+04/03/2023  08:22 PM    <DIR>          .
+27/02/2023  01:04 PM    <DIR>          ..
+25/09/2022  03:01 PM    <DIR>          .anaconda
+27/08/2022  01:39 PM    <DIR>          .android
+03/03/2022  02:05 PM    <DIR>          .cisco
+02/10/2022  03:50 AM    <DIR>          .conda
+26/07/2022  11:10 AM                25 .condarc
+26/07/2022  11:09 AM    <DIR>          .continuum
+04/03/2022  06:14 PM                16 .emulator_console_auth_token
+02/11/2022  03:20 PM                58 .gitconfig
+04/03/2022  12:57 PM    <DIR>          .gradle
+06/02/2023  05:47 PM    <DIR>          .idea
+24/03/2022  11:26 PM    <DIR>          .idlerc
+02/08/2022  12:12 PM    <DIR>          .ipynb_checkpoints
+26/07/2022  11:16 AM    <DIR>          .ipython
+02/11/2022  03:15 PM    <DIR>          .jdks
+29/09/2022  11:29 PM    <DIR>          .jupyter
+02/08/2022  11:15 AM    <DIR>          .matplotlib
+01/03/2023  05:30 PM    <DIR>          .VirtualBox
+28/02/2022  12:40 AM    <DIR>          .vscode
+30/08/2022  08:34 PM    <DIR>          .vscode-R
+02/08/2022  12:13 PM            45,095 1111.ipynb
+27/02/2022  04:41 AM    <DIR>          3D Objects
+25/09/2022  03:02 PM    <DIR>          anaconda3
+09/03/2022  09:27 AM    <DIR>          AndroidStudioProjects
+16/03/2022  09:20 AM    <DIR>          Contacts
+26/12/2022  02:01 PM    <DIR>          country-info
+04/03/2023  04:09 PM    <DIR>          Desktop
+04/03/2023  07:26 PM    <DIR>          Documents
+03/03/2023  04:52 PM    <DIR>          Downloads
+16/03/2022  09:20 AM    <DIR>          Favorites
+26/07/2022  12:26 PM             4,432 hello world.ipynb
+02/11/2022  03:04 PM    <DIR>          IdeaProjects
+16/03/2022  09:20 AM    <DIR>          Links
+16/03/2022  09:20 AM    <DIR>          Music
+20/10/2022  04:11 PM    <DIR>          OneDrive
+04/03/2023  08:22 PM             2,387 output.txt
+18/01/2023  07:18 PM    <DIR>          Pictures
+16/03/2022  09:20 AM    <DIR>          Saved Games
+16/03/2022  09:20 AM    <DIR>          Searches
+20/04/2022  02:06 PM    <DIR>          venv
+16/03/2022  09:20 AM    <DIR>          Videos
+27/02/2023  01:08 PM    <DIR>          VirtualBox VMs
+02/08/2022  12:22 PM            45,099 week2.ipynb
+               7 个文件         97,112 字节
+              37 个目录 261,533,528,064 可用字节
