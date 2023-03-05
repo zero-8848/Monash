@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_movie_menu_id"
+        android:title="add movie" />
+    <item
+        android:id="@+id/remove_last_movie_menu_id"
+        android:title="remove last movie" />
+    <item
+        android:id="@+id/remove_all_movies_menu_id"
+        android:title="clear all movies" />
+    <item
+        android:id="@+id/double_cost"
+        android:title="double cost" />
+
+    <item
+        android:id="@+id/list_all_movies"
+        android:title="List all movies" />
+    <item
+        android:id="@+id/delete_all_movies"
+        android:title="Delete all movies" />
+
+    <item
+        android:id="@+id/submenu"
+        android:title="Database">
+        <menu>
+            <item
+                android:id="@+id/databaseNav"
+                android:title="DataBase"
+                />
+
+            <item
+                android:id="@+id/databaseClear"
+                android:title="Clear Database"
+                />
+            <item
+                android:id="@+id/delete_2020"
+                android:title="Delete all movies before 2020"
+                />
+            <item
+                android:id="@+id/delete_20buck"
+                android:title="delete 20"
+                />
+        </menu>
+    </item>
+</menu>
