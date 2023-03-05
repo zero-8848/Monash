@@ -1,0 +1,82 @@
+---
+title: "task1code"
+author: "Zirui Liu"
+date: "2022-09-24"
+output: html_document
+---
+
+```{r}
+library("readxl")
+df <- read_excel("ANZ synthesised transaction dataset.xlsx")
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Start by doing some basic checks – are there any data issues? Does the data need to be cleaned?
+
+import libraries
+```{r}
+library(data.table)
+library(tidyverse)
+library(knitr)
+library(rpart)
+library(dplyr)
+library(ozmaps)
+```
+
+
+Gather some interesting overall insights about the data. For example -- what is the average transaction amount? How many transactions do customers make each month, on average?
+
+Segment the dataset by transaction date and time. Visualise transaction volume and spending over the course of an average day or week. Consider the effect of any outliers that may distort your analysis.
+
+For a challenge – what insights can you draw from the location information provided in the dataset?
+
+Put together 2-3 slides summarising your most interesting findings to ANZ management.
+```{r}
+str(df)
+```
+
+```{r}
+sapply(df, function(x) sum(is.na(x))) 
+```
+There are 4326 missing values in `card_present_flag` column, 11160 missing values in `bpay_biller_code` column, 4326 missing values in `merchant_id` column, 11160 missing values in `merchant_code` column, 4326 missing values in `merchant_suburb` column, 4326 missing values in `merchant_state` column, and 4326 missing values in `merchant_long_lat` column.
+### Change the formats for some variables
+```{r}
+#### Convert status column to a factor format
+df$status <- as.factor(df$status)
+#### Convert date column to a date format
+df$date <- as.Date(df$date, format = "%m/%d/%Y")
+#### Convert gender column to a factor format
+df$gender <- as.factor(df$gender)
+#### Convert merchant_state column to a factor format
+df$merchant_state <- as.factor(df$merchant_state)
+#### Convert movement column to a factor format
+df$movement <- as.factor(df$movement)
+
+str(df)
+```
+```{r}
+sapply(df[,c("merchant_code","balance","gender","age","merchant_state","amount","movement","long_lat")],
+function(x) sum(is.na(x)|x == "")/length(x)*100) 
+```
+
+
+### Find the missing date
+```{r}
+#### Find the missing date 
+DateRange <- seq(range(df$date)[1],range(df$date)[2],by=1)
+DateRange[!DateRange %in% df$date]
+```
+```{r}
+#### Create month variable
+df$month <- 
+  ifelse(month(df$date) == 8, "Aug", 
+         ifelse(month(df$date) == 9, "Sep", "Oct"))
+table(df$month)
+sum(table(df$month))
+```
+
+
+
