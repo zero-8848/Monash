@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="B09C5E04-B33A-58C2-7A07-B8F4F88CE614">
+<createdBy>kimberlykurniawan</createdBy>
+<createdTime>2022-12-27 06:40:19 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

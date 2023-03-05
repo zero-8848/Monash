@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FEF3FE0-4854-AD19-B3CF-5D0929B6CF91" name="HOLIDAY_RATE">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<generatorID>86CE81E4-B888-24CF-065C-6D025806E71F</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="holiday_rate_no" id="43CDF07B-DAA7-EDD4-6D01-3FA3FF55B50B">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surrogate key for holiday rate.]]></commentInRDBMS>
+<generatorID>16D01A5F-D418-8C87-56CB-9301C51CCA62</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="holiday_rate" id="316DF492-F25F-1709-DCF9-89CF252222B7">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[P for peak season
+O for off season
+S for school holiday]]></commentInRDBMS>
+<generatorID>A3E72B66-1D65-A1AA-5CB2-A78C22CADF31</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<constraintName>chk_season</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="O" description="off season"/>
+<valueDef value="P" description="peak season"/>
+<valueDef value="S" description="school season"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="holiday_point_for_a_week" id="CFA983E7-53E8-C5E1-7D70-072809955CAA">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The point cost for a week]]></commentInRDBMS>
+<generatorID>E410D9F1-00B3-E9E1-0E1D-6238DEF79B1D</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_no" id="98DB7E93-28DE-EA56-AD42-86BCBCE321D7">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique number for each unit in a resort]]></commentInRDBMS>
+<generatorID>DA54089C-A37C-5961-1250-3C04D4289D6D</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D8EAEF8-901B-B8CF-7B88-5823E3E80883" referredColumn="AA9F5A93-F5F2-CCAA-5A45-5E345C87C33D"/>
+</associations>
+</Column>
+<Column name="resort_id" id="67829826-6214-BB1B-88F6-DAA944C6E14D">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique id for each resort in the town]]></commentInRDBMS>
+<generatorID>2EE2E0AA-A0C2-AFB3-59E0-5AF81BBE5D6C</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D8EAEF8-901B-B8CF-7B88-5823E3E80883" referredColumn="18F5B7BB-57E5-161A-ECC7-A37A99FD7360"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05A1004D-732A-25E1-CFD2-F32DC2CA9E0C" name="HOLIDAY_RATE_PK">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<generatorID>B041608F-83E7-1414-87CA-F7D61B08CB86</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43CDF07B-DAA7-EDD4-6D01-3FA3FF55B50B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="998164D4-2DAC-4F70-620C-4C3F8EAD7B91" name="HOLIDAY_RATE_NKv1">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<generatorID>4171CE1A-EC84-081C-D0DE-B19D13F28449</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="316DF492-F25F-1709-DCF9-89CF252222B7"/>
+<colUsage columnID="98DB7E93-28DE-EA56-AD42-86BCBCE321D7"/>
+<colUsage columnID="67829826-6214-BB1B-88F6-DAA944C6E14D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6E10633-F0C5-E94F-500C-5783FCEBC26C" name="HOLIDAY_RATE_UNIT">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<generatorID>FFE462E4-8B56-2E91-E467-535D3D7A5E80</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98DB7E93-28DE-EA56-AD42-86BCBCE321D7"/>
+<colUsage columnID="67829826-6214-BB1B-88F6-DAA944C6E14D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

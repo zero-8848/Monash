@@ -1,0 +1,197 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="23E7B129-AEFF-6BE9-92DC-BCD92722B83D" name="BOOKING">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 06:56:51 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="booking_no" id="B5340378-75CE-36AB-7B66-D362D136524A">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:27:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surrogate key for booking.]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booking_start_date" id="D44C1011-C0B2-0D9B-71C3-3C8EA79E3AFE">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 06:57:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[The start date of a member booking]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booking_end_date" id="406E4732-20C7-0FFA-2143-9978DF615174">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 06:57:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[The end date of a member booking]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booking_point_cost" id="84CC3967-5D11-FD2E-D7F7-D2399876A1F0">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 06:58:19 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booking_no_adult" id="BA779B75-C534-796C-C03B-BBE37486D557">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 07:00:18 UTC</createdTime>
+<commentInRDBMS><![CDATA[The number of adults]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="booking_no_children" id="FBBCBA0D-46DF-24D6-1392-66D1D8CE9455">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 07:00:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[The number of children]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit_no" id="73797350-8E14-D940-5964-39CD68B74F0F">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:53:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique number for each unit in a resort]]></commentInRDBMS>
+<generatorID>35262B2B-A812-4DDF-43E5-59EB285EB4A3</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<referedAttribute>165C5D0D-CC77-F744-2A50-0FB81102AC04</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resort_id" id="399F59B0-9C3B-5E2B-215B-1BA89BF1EBA6">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:53:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique id for each resort in the town]]></commentInRDBMS>
+<generatorID>35262B2B-A812-4DDF-43E5-59EB285EB4A3</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<referedAttribute>0A9247FE-43DF-092F-3947-A1FE2336EF9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_no" id="0DCAEE00-AA06-CF7F-BD34-967AF6D02B3D">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:55:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[member number]]></commentInRDBMS>
+<generatorID>2E909AFA-601D-574C-26A3-F73760571591</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<referedAttribute>E3A689F2-87DA-A111-D0E6-305B899236A1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resort_id1" id="49DA900F-0835-3411-3D3E-A7F7FDFBCA0C">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:55:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique id for each resort in the town]]></commentInRDBMS>
+<generatorID>2E909AFA-601D-574C-26A3-F73760571591</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<referedAttribute>30003B1F-58E6-B456-78F9-ACDA0D8291E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E77C0B36-A7D0-03BD-DB35-40A4B258D4E3" name="BOOKING_PK">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 06:57:33 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B5340378-75CE-36AB-7B66-D362D136524A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="58B4AF2F-51FC-CB88-83C9-278825E66A8B" name="BOOKING_NK">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:55:51 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="false"/>
+</engineerTo>
+<newElementsIDs>D44C1011-C0B2-0D9B-71C3-3C8EA79E3AFE,73797350-8E14-D940-5964-39CD68B74F0F,399F59B0-9C3B-5E2B-215B-1BA89BF1EBA6</newElementsIDs>
+<usedAttributes>
+<attributeRef>D44C1011-C0B2-0D9B-71C3-3C8EA79E3AFE</attributeRef>
+<attributeRef>73797350-8E14-D940-5964-39CD68B74F0F</attributeRef>
+<attributeRef>399F59B0-9C3B-5E2B-215B-1BA89BF1EBA6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

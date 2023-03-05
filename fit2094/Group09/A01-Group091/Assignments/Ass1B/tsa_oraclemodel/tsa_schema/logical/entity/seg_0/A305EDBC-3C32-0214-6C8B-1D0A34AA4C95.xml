@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A305EDBC-3C32-0214-6C8B-1D0A34AA4C95" name="UNIT">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 09:58:23 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="unit_no" id="165C5D0D-CC77-F744-2A50-0FB81102AC04">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 09:58:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique number for each unit in a resort]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resort_id" id="0A9247FE-43DF-092F-3947-A1FE2336EF9D">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 10:04:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique id for each resort in the town]]></commentInRDBMS>
+<generatorID>DF6A1F79-B316-6FEA-1E8A-2CBC04E7F186</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<referedAttribute>0277F5A3-FAD5-545C-E980-F6249980240E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit_type" id="93023747-3A0D-C09E-13A5-5A580C85B44A">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 09:59:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[The type of a unit]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit_capacity" id="F530F5AA-FC15-DB68-9DF8-0D680C359C5B">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 09:59:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[The units sleeping capacity]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit_description" id="C84FD4D1-29C8-5653-57E3-020E6ABD4C0A">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 10:00:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[The description of a unit]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit_bedroom" id="8AC0F239-10EE-FF2D-56ED-5305DF64DDC6">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 10:01:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[The number of bedrooms]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ECC5FCB2-5926-D618-1029-B33671D9D093" name="UNIT_PK">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 09:58:50 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>165C5D0D-CC77-F744-2A50-0FB81102AC04,DF6A1F79-B316-6FEA-1E8A-2CBC04E7F186</newElementsIDs>
+<usedAttributes>
+<attributeRef>165C5D0D-CC77-F744-2A50-0FB81102AC04</attributeRef>
+<attributeRef>0A9247FE-43DF-092F-3947-A1FE2336EF9D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

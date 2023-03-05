@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="86CE81E4-B888-24CF-065C-6D025806E71F" name="HOLIDAY_RATE">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 07:26:36 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="holiday_rate_no" id="16D01A5F-D418-8C87-56CB-9301C51CCA62">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:46:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surrogate key for holiday rate.]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="holiday_rate" id="A3E72B66-1D65-A1AA-5CB2-A78C22CADF31">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 07:26:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[P for peak season
+O for off season
+S for school holiday]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<constraintName>chk_season</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="O" description="off season"/>
+<valueDef value="P" description="peak season"/>
+<valueDef value="S" description="school season"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="holiday_point_for_a_week" id="E410D9F1-00B3-E9E1-0E1D-6238DEF79B1D">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 07:29:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[The point cost for a week]]></commentInRDBMS>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="unit_no" id="DA54089C-A37C-5961-1250-3C04D4289D6D">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:49:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[The unique number for each unit in a resort]]></commentInRDBMS>
+<generatorID>FFE462E4-8B56-2E91-E467-535D3D7A5E80</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<referedAttribute>165C5D0D-CC77-F744-2A50-0FB81102AC04</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resort_id" id="2EE2E0AA-A0C2-AFB3-59E0-5AF81BBE5D6C">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:49:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique id for each resort in the town]]></commentInRDBMS>
+<generatorID>FFE462E4-8B56-2E91-E467-535D3D7A5E80</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<referedAttribute>0A9247FE-43DF-092F-3947-A1FE2336EF9D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B041608F-83E7-1414-87CA-F7D61B08CB86" name="HOLIDAY_RATE_PK">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 07:27:05 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>16D01A5F-D418-8C87-56CB-9301C51CCA62</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4171CE1A-EC84-081C-D0DE-B19D13F28449" name="HOLIDAY_RATE_NKv1">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 02:51:42 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="false"/>
+</engineerTo>
+<newElementsIDs>A3E72B66-1D65-A1AA-5CB2-A78C22CADF31,DA54089C-A37C-5961-1250-3C04D4289D6D,2EE2E0AA-A0C2-AFB3-59E0-5AF81BBE5D6C</newElementsIDs>
+<usedAttributes>
+<attributeRef>A3E72B66-1D65-A1AA-5CB2-A78C22CADF31</attributeRef>
+<attributeRef>DA54089C-A37C-5961-1250-3C04D4289D6D</attributeRef>
+<attributeRef>2EE2E0AA-A0C2-AFB3-59E0-5AF81BBE5D6C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

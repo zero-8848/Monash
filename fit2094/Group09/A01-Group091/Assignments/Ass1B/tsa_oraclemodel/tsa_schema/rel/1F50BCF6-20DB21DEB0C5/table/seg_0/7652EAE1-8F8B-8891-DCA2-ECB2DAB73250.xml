@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7652EAE1-8F8B-8891-DCA2-ECB2DAB73250" name="MEMBERSHIP_FEE">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<generatorID>0D89C423-E6D9-2EA6-4F52-8CD2C8F289DD</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="membership_fee_no" id="66D12C6C-B119-9DD1-1C1C-F19F155B47C9">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Surrogate key for membership fee]]></commentInRDBMS>
+<generatorID>7E737D4C-B571-6A23-38E7-DEA3AEF955BC</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_fee_year" id="8F7C3AFB-613F-ECDC-8B28-0F3076E390C5">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The year that fee charged]]></commentInRDBMS>
+<generatorID>3C8210B7-F8C8-172B-E1C7-088569E2297A</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_maintenance_fee" id="AC09BBCF-1733-C45B-5625-CE8D4F657EBB">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The member's maintenance fee.]]></commentInRDBMS>
+<generatorID>5D7167F9-7BEB-E4C3-644D-4058BCA32D75</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_annual_man_fee" id="F1185581-FA26-709B-34F6-1F1B22E63843">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The annual fee charged to members.]]></commentInRDBMS>
+<generatorID>8B15D797-7DA4-08B4-EDF7-F46E05B3ACCF</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_total_charge" id="A6F71009-8E6F-82FB-5C70-37F3049214CC">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Total fee charged to member ]]></commentInRDBMS>
+<generatorID>FF2238B8-F183-2600-2AE7-65A5D3E7D34F</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_date_paid" id="3FDECB34-4DAC-AC98-676B-52D4E886E96A">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[The date that the member paid fees]]></commentInRDBMS>
+<generatorID>8AE3E517-3646-AE97-32F3-2FA3282C2B9F</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_no" id="2F7D6E60-7992-816F-7754-58D034C3E4FC">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[member number]]></commentInRDBMS>
+<generatorID>72C83CF5-05C9-5CFA-AB0E-4C0DE69FB466</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="089253AD-1F6F-CCAC-217B-1A019EC77DE2" referredColumn="FDF13D6C-F486-6A94-D9E3-FE0AE40F8688"/>
+</associations>
+</Column>
+<Column name="resort_id" id="792065DE-5F0B-7963-310C-AA144D617F47">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique id for each resort in the town]]></commentInRDBMS>
+<generatorID>1B5E7AF7-E556-6734-605F-08E5D8794265</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="089253AD-1F6F-CCAC-217B-1A019EC77DE2" referredColumn="CDBCA9A1-CB25-4726-6885-27195D9FEA55"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BDED5381-BC1D-F781-3CF6-1A02790C03FC" name="MEMBERSHIP_FEE_PK">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<generatorID>E0905E6C-30E3-F15D-0556-FEFFD2BED3C8</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66D12C6C-B119-9DD1-1C1C-F19F155B47C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E920BB3E-7F32-26FC-3112-7B9DC286B16D" name="MEMBERSHIP_FEE_NK">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<generatorID>A812E292-5B0C-9F1B-D36E-2960B76540AC</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F7C3AFB-613F-ECDC-8B28-0F3076E390C5"/>
+<colUsage columnID="2F7D6E60-7992-816F-7754-58D034C3E4FC"/>
+<colUsage columnID="792065DE-5F0B-7963-310C-AA144D617F47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5389508D-6B42-6EDE-EECB-8B88799114C0" name="MEMBER_MEMBERSHIP_FEE">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<generatorID>9EDE9679-9711-773B-88AA-5076C14E683D</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F7D6E60-7992-816F-7754-58D034C3E4FC"/>
+<colUsage columnID="792065DE-5F0B-7963-310C-AA144D617F47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

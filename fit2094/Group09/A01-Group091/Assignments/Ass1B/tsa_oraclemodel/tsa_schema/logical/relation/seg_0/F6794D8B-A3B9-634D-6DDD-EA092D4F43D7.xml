@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COMPANY_RSORT" directorySegmentName="seg_0" id="F6794D8B-A3B9-634D-6DDD-EA092D4F43D7">
+<createdBy>jizhoujia</createdBy>
+<createdTime>2022-12-28 06:15:18 UTC</createdTime>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<engineerTo>
+<item key="1F50BCF6-0C89-D733-3526-20DB21DEB0C5" value="true"/>
+</engineerTo>
+<sourcePk>9FB587C0-0D57-9AC8-90A8-DA299513EB62</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>owns</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>59777EC7-C58A-6F6E-5553-CE288EBAF0AB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A003D23E-7E26-B747-2FE1-33D7C6450891</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

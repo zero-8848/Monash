@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7D8EAEF8-901B-B8CF-7B88-5823E3E80883" containerWithKeyObject="5FEF3FE0-4854-AD19-B3CF-5D0929B6CF91" localFKIndex="E6E10633-F0C5-E94F-500C-5783FCEBC26C" name="HOLIDAY_RATE_UNIT">
+<createdBy>zirui</createdBy>
+<createdTime>2023-01-01 03:12:57 UTC</createdTime>
+<generatorID>FFE462E4-8B56-2E91-E467-535D3D7A5E80</generatorID>
+<ownerDesignName>tsa_schema</ownerDesignName>
+<referredTableLongName>UNIT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BC5FE851-C319-E73F-2688-4438AED5DE26</referredTableID>
+<keyObject>1622A906-1E8F-939E-2E0A-AB5015AE5FDC</keyObject>
+<referredKeyID>1622A906-1E8F-939E-2E0A-AB5015AE5FDC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>unit_no,resort_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
