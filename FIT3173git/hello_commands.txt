@@ -1,0 +1,88 @@
+    1  sudo apt-get install xfce4
+    2  ping www.google.com
+    3  ifconfig
+    4  ping www.google.com
+    5  ifconfig
+    6  ping www.google.com
+    7  ping 8.8.8.8
+    8  ping www.syr.edu
+    9  ping www.google.com
+   10  sudo apt-get update
+   11  sudo gedit /etc/sudoers
+   12  sudo apt-get update
+   13  sudo apt-get install xfce4
+   14  ls
+   15  ping www.google.com
+   16  cd /
+   17  find . -name 'xfce-teal.jpg'
+   18  sudo find . -name 'xfce-teal.jpg'
+   19  cd /usr/share/backgrounds/
+   20  ls
+   21  cp Black_hole_by_Marek_Koteluk_with_logo.jpg  xfce/
+   22  ll
+   23  sudo cp Black_hole_by_Marek_Koteluk_with_logo.jpg  xfce/
+   24  ls
+   25  cd xfce/
+   26  ls
+   27  sudo rm Black_hole_by_Marek_Koteluk_with_logo.jpg 
+   28  ls
+   29  cd ..
+   30  sudo su
+   31  sudo adduser seed vboxsf
+   32  ls
+   33  ls hoe
+   34  ls home
+   35  ls
+   36  shared
+   37  sudo adduser seed vboxsf
+   38  cd shardFolder
+   39  ls media
+   40  sudo find / -type d -name media 2>/dev/null
+   41  sudo find / -type d -name general_communication  2>/dev/null
+   42  sudo find / -type d -name general_communication.txt  2>/dev/null
+   43  ls
+   44  nano hello.c
+   45  vim hello.c
+   46  gcc hello.c
+   47  ./a.out
+   48  vim hello.c
+   49  gcc hello.c 
+   50  ./a.out
+   51  vim hello.c
+   52  gcc hello.c
+   53  vim hello.c
+   54  vim hello.c 
+   55  gcc hello.c 
+   56  ./a.out
+   57  vim hello.c 
+   58  gcc hello.c 
+   59  vim hello.c 
+   60  gcc hello.c 
+   61  ./a.out
+   62  vim hello.c 
+   63  ls
+   64  cd Deskto
+   65  cd Desktop/
+   66  ls
+   67  mkdir HelloWorld Folder
+   68  ls
+   69  cd HelloWorld/
+   70  ls
+   71  vim helloworld.c
+   72  ls
+   73  ..
+   74  cd ..
+   75  ls
+   76  cd HelloWorld/
+   77  ls
+   78  nano
+   79  nano helloworld.c
+   80  n
+   81  nano helloworld.c
+   82  gcc hello_world.c -o hello_world ./hello_world
+   83  gcc hello_world.c -o hello_world 
+   84  ls
+   85  gcc helloworld.c -o helloworld 
+   86  ./helloworld
+   87  history
+   88  history >hello_commands.txt
