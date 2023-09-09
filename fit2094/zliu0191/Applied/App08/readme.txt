@@ -1,1 +1,0 @@
-Applied 8 folder

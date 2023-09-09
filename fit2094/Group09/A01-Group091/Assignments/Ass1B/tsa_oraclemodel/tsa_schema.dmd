@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="tsa_schema" id="78F4CF87-AF21-7D70-0FE8-C5894345C8FB" version="3.5">
-<createdBy>kimberlykurniawan</createdBy>
-<createdTime>2022-12-27 06:40:19 UTC</createdTime>
-<ownerDesignName>tsa_schema</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>78F4CF87-AF21-7D70-0FE8-C5894345C8FB</designId>
-</OSDM_Design>

@@ -1,1 +1,0 @@
-Applied 10 folder

@@ -1,1 +1,0 @@
-Applied 7 folder

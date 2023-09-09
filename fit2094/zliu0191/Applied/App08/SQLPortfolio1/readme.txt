@@ -1,1 +1,0 @@
-Applied 8 SQL Portfolio 1 folder
