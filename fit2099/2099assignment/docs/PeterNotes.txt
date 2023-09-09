@@ -1,7 +1,0 @@
-TODO
-Menu display to show catch actions:
-For example,
-a catch torchic with ball
-
-Question:
-Do catchable status become redundant?As we are using boolean to check the if a pokemon can be  catched.
